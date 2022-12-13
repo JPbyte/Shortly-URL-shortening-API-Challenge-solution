@@ -4,4 +4,72 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem;
+}
+header .nav_login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 65rem;
+}
+header .nav_login nav {
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav_login nav a {
+  font-size: 1.1rem;
+  color: hsl(257deg, 7%, 63%);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+header .nav_login nav a:hover {
+  color: hsl(260deg, 8%, 14%);
+}
+header .nav_login .login_sign {
+  width: 100%;
+  max-width: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav_login .login_sign a {
+  font-size: 1.1rem;
+  color: hsl(257deg, 7%, 63%);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+header .nav_login .login_sign a:hover {
+  color: hsl(260deg, 8%, 14%);
+}
+header .nav_login .login_sign .sign {
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 7rem;
+  height: 2.5rem;
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+  border: none;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+header .nav_login .login_sign .sign:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */

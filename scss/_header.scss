@@ -1,0 +1,61 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+        .nav_login{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 65rem;
+                nav{
+                    width: 100%;
+                    max-width: 20rem;
+                    display: flex;
+                    justify-content: space-between;
+                        a{
+                            font-size: 1.1rem;
+                            color: $Grayish-Violet;
+                            font-weight: 700;
+                            cursor: pointer;
+                            transition: 0.4s;
+                                &:hover{
+                                    color: $Very-Dark-Violet;
+                                }
+                        }
+                }
+                .login_sign{
+                    width: 100%;
+                    max-width: 11rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                        a{
+                            font-size: 1.1rem;
+                            color: $Grayish-Violet;
+                            font-weight: 700;
+                            cursor: pointer;
+                            transition: 0.4s;
+                                &:hover{
+                                    color: $Very-Dark-Violet;
+                                }
+                        }
+                        .sign{
+                            font-size: 1.1rem;
+                            width: 100%;
+                            max-width: 7rem;
+                            height: 2.5rem;
+                            background-color: $Cyan;
+                            color: white;
+                            border: none;
+                            border-radius: 0.90rem;
+                            cursor: pointer;
+                            transition: 0.4s;
+                                &:hover{
+                                    opacity: 0.8;
+                                }
+                        }
+                }
+        }
+}
