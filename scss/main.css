@@ -68,11 +68,12 @@ header .nav_login .login_sign .sign {
   background-color: hsl(180deg, 66%, 49%);
   color: white;
   border: none;
-  border-radius: 0.9rem;
+  border-radius: 1.1rem;
   cursor: pointer;
   transition: 0.4s;
 }
 header .nav_login .login_sign .sign:hover {
+  transform: scale(1.01);
   opacity: 0.8;
 }
 
@@ -81,9 +82,174 @@ main {
   height: 100vh;
 }
 main .section_hero {
+  width: 100%;
   display: flex;
-  padding: 7rem;
+  padding: 6.6rem;
+  margin-bottom: 5rem;
+}
+main .section_hero .hero_text h1 {
+  font-size: 4rem;
+  color: hsl(255deg, 11%, 22%);
+}
+main .section_hero .hero_text p {
+  font-size: 1.2rem;
+  color: hsl(257deg, 7%, 63%);
+  width: 100%;
+  max-width: 33rem;
+  margin-bottom: 3rem;
+}
+main .section_hero .hero_text .hero_btn {
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 10.7rem;
+  height: 3.5rem;
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .section_hero .hero_text .hero_btn:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
 }
 main .section_hero .img_hero img {
   width: 100%;
+}
+
+.statistics {
+  width: 100%;
+  height: 50rem;
+  background-color: hsl(0deg, 0%, 94%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.statistics #link {
+  width: 90%;
+  max-width: 78rem;
+  height: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/bg-shorten-desktop.svg) no-repeat #3b3054;
+  background-size: cover;
+  border: none;
+  border-radius: 1rem;
+  position: absolute;
+  top: -6rem;
+}
+.statistics #link #link_put {
+  width: 100%;
+  max-width: 50rem;
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+}
+.statistics #link #link_put::-moz-placeholder {
+  color: hsl(257deg, 7%, 63%);
+}
+.statistics #link #link_put:-ms-input-placeholder {
+  color: hsl(257deg, 7%, 63%);
+}
+.statistics #link #link_put::placeholder {
+  color: hsl(257deg, 7%, 63%);
+}
+.statistics #link #link_btn {
+  width: 100%;
+  max-width: 12rem;
+  height: 4rem;
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.8rem;
+  margin-left: 2rem;
+  transition: 0.4s;
+}
+.statistics #link #link_btn:hover {
+  background-color: hsl(180deg, 70%, 52%);
+  transform: scale(1.01);
+}
+.statistics .adv_stats {
+  width: 100%;
+  height: 20.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 11rem;
+}
+.statistics .adv_stats h2 {
+  color: hsl(255deg, 11%, 22%);
+  font-size: 2.6rem;
+}
+.statistics .adv_stats .adv_stats_p {
+  width: 100%;
+  max-width: 35rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: hsl(257deg, 7%, 63%);
+  line-height: 2rem;
+  margin-bottom: 4rem;
+}
+.statistics .adv_stats .statistics_cards {
+  width: 100%;
+  max-width: 75rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  position: relative;
+}
+.statistics .adv_stats .statistics_cards::before {
+  content: "";
+  position: absolute;
+  left: 23rem;
+  top: 7rem;
+  background: linear-gradient(90deg, rgb(42, 207, 207) 50%, rgb(48, 245, 245) 96%);
+  width: 30rem;
+  height: 0.6rem;
+}
+.statistics .adv_stats .statistics_cards .card {
+  position: relative;
+  background-color: white;
+  padding: 1.8rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.4s;
+}
+.statistics .adv_stats .statistics_cards .card:nth-child(2) {
+  margin-top: 2rem;
+}
+.statistics .adv_stats .statistics_cards .card:nth-child(3) {
+  margin-top: 4rem;
+}
+.statistics .adv_stats .statistics_cards .card p {
+  font-size: 1rem;
+}
+.statistics .adv_stats .statistics_cards .card h3 {
+  font-size: 1.4rem;
+  color: hsl(255deg, 11%, 22%);
+}
+.statistics .adv_stats .statistics_cards .card .img_border {
+  width: 100%;
+  max-width: 5rem;
+  position: absolute;
+  border-radius: 50%;
+  top: -3rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3054;
+}
+.statistics .adv_stats .statistics_cards .card:hover {
+  transform: scale(1.03);
 }/*# sourceMappingURL=main.css.map */

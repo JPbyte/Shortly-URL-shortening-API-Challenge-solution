@@ -1,0 +1,129 @@
+.statistics{
+    width: 100%;
+    height: 50rem;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+        #link{
+            width: 90%;
+            max-width: 78rem;
+            height: 11rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../images/bg-shorten-desktop.svg) no-repeat #3b3054;
+            background-size: cover;
+            border: none;
+            border-radius: 1rem;
+            position: absolute;
+            top: -6rem;
+                #link_put{
+                    width: 100%;
+                    max-width: 50rem;
+                    height: 4rem;
+                    padding: 1rem 1.5rem;
+                    font-size: 1.2rem;
+                    border: none;
+                    border-radius: 0.8rem;
+                        &::placeholder{
+                            color: $Grayish-Violet;
+                        }
+                }
+                #link_btn{
+                    width: 100%;
+                    max-width: 12rem;
+                    height: 4rem;
+                    background-color: $Cyan;
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 0.8rem;
+                    margin-left: 2rem;
+                    transition: 0.4s;
+                        &:hover{
+                            background-color: hsl(180, 70%, 52%);
+                            transform: scale(1.01);
+                        }
+                }
+        }
+        .adv_stats{
+            width: 100%;
+            height: 20.3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 11rem;
+                h2{
+                    color: $Very-Dark-Blue;
+                    font-size: 2.6rem;
+                }
+                .adv_stats_p{
+                    width: 100%;
+                    max-width: 35rem;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    color: $Grayish-Violet;
+                    line-height: 2rem;
+                    margin-bottom: 4rem;
+                }
+                .statistics_cards{
+                    width: 100%;
+                    max-width: 75rem;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 3rem;
+                    position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 23rem;
+                            top: 7rem;
+                            background: linear-gradient(90deg, rgba(42,207,207,1) 50%, rgba(48,245,245,1) 96%);
+                            width: 30rem;
+                            height: 0.60rem;
+                        }   
+                        .card{
+                            position: relative;
+                            background-color: white;
+                            padding: 1.8rem;
+                            height: 15rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            transition: 0.4s;
+                                &:nth-child(2) {
+                                    margin-top: 2rem;
+                                }
+                                &:nth-child(3) {
+                                    margin-top: 4rem;
+                                }
+                                p{
+                                    font-size: 1rem;
+                                }
+                                h3{
+                                    font-size: 1.4rem;
+                                    color: $Very-Dark-Blue;
+                                }
+                                .img_border{
+                                    width: 100%;
+                                    max-width: 5rem;
+                                    position: absolute;
+                                    border-radius: 50%;
+                                    top: -3rem;
+                                    height: 5rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #3b3054;
+                                }
+                                    &:hover{
+                                        transform: scale(1.03);
+                                    }
+                        }
+                }
+        }
+}
