@@ -128,11 +128,7 @@ main .section_hero .img_hero img {
   align-items: center;
   position: relative;
 }
-.statistics .link_start {
-  width: 100%;
-  max-width: 75rem;
-}
-.statistics .link_start #link {
+.statistics #link {
   width: 90%;
   max-width: 78rem;
   height: 11rem;
@@ -146,7 +142,7 @@ main .section_hero .img_hero img {
   position: absolute;
   top: -6rem;
 }
-.statistics .link_start #link #link_put {
+.statistics #link #link_put {
   width: 100%;
   max-width: 50rem;
   height: 4rem;
@@ -155,16 +151,16 @@ main .section_hero .img_hero img {
   border: none;
   border-radius: 0.8rem;
 }
-.statistics .link_start #link #link_put::-moz-placeholder {
+.statistics #link #link_put::-moz-placeholder {
   color: hsl(257deg, 7%, 63%);
 }
-.statistics .link_start #link #link_put:-ms-input-placeholder {
+.statistics #link #link_put:-ms-input-placeholder {
   color: hsl(257deg, 7%, 63%);
 }
-.statistics .link_start #link #link_put::placeholder {
+.statistics #link #link_put::placeholder {
   color: hsl(257deg, 7%, 63%);
 }
-.statistics .link_start #link #link_btn {
+.statistics #link #link_btn {
   width: 100%;
   max-width: 12rem;
   height: 4rem;
@@ -176,19 +172,32 @@ main .section_hero .img_hero img {
   border-radius: 0.8rem;
   margin-left: 2rem;
   transition: 0.4s;
+  cursor: pointer;
 }
-.statistics .link_start #link #link_btn:hover {
+.statistics #link #link_btn:hover {
   background-color: hsl(180deg, 70%, 52%);
   transform: scale(1.01);
 }
 .statistics .adv_stats {
   width: 100%;
-  height: 20.3rem;
+  height: 36.3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 11rem;
+  margin-top: 8rem;
+}
+.statistics .adv_stats .link_short {
+  display: none;
+  width: 100%;
+  max-width: 65rem;
+  height: 3rem;
+  background-color: #3b3054;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-size: 1.3rem;
 }
 .statistics .adv_stats h2 {
   color: hsl(255deg, 11%, 22%);
