@@ -1,0 +1,47 @@
+footer{
+    width: 100%;
+    height: 15rem;
+    padding: 6rem;
+    background-color: $Very-Dark-Violet;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+        .footer_logo{
+            filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1086%) hue-rotate(82deg) brightness(114%) contrast(100%);
+        }
+        .footer_nav{
+            width: 100%;
+            max-width: 8rem;
+            color: $Grayish-Violet;
+                nav{
+                    ul{
+                        li{
+                            cursor: pointer;
+                            transition: 0.4s;
+                                &:hover{
+                                    color: $Cyan;
+                                }
+                        }
+                        li:nth-child(1){
+                            margin-bottom: 1rem;
+                            color: white;
+                        }
+                    }
+                }
+        }
+        .social{
+            ul{
+                width: 100%;
+                max-width: 10rem;
+                display: flex;
+                justify-content: space-between;
+                    li{
+                        cursor: pointer;
+                        transition: 0.4s;
+                            &:hover{
+                                transform: translateY(-0.10rem);
+                                filter: brightness(0) saturate(100%) invert(83%) sepia(73%) saturate(1690%) hue-rotate(119deg) brightness(91%) contrast(76%);
+                            }
+                    }
+            }
+        }
+}

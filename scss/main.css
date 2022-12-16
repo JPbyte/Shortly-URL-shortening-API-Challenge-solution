@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -127,7 +128,11 @@ main .section_hero .img_hero img {
   align-items: center;
   position: relative;
 }
-.statistics #link {
+.statistics .link_start {
+  width: 100%;
+  max-width: 75rem;
+}
+.statistics .link_start #link {
   width: 90%;
   max-width: 78rem;
   height: 11rem;
@@ -141,7 +146,7 @@ main .section_hero .img_hero img {
   position: absolute;
   top: -6rem;
 }
-.statistics #link #link_put {
+.statistics .link_start #link #link_put {
   width: 100%;
   max-width: 50rem;
   height: 4rem;
@@ -150,16 +155,16 @@ main .section_hero .img_hero img {
   border: none;
   border-radius: 0.8rem;
 }
-.statistics #link #link_put::-moz-placeholder {
+.statistics .link_start #link #link_put::-moz-placeholder {
   color: hsl(257deg, 7%, 63%);
 }
-.statistics #link #link_put:-ms-input-placeholder {
+.statistics .link_start #link #link_put:-ms-input-placeholder {
   color: hsl(257deg, 7%, 63%);
 }
-.statistics #link #link_put::placeholder {
+.statistics .link_start #link #link_put::placeholder {
   color: hsl(257deg, 7%, 63%);
 }
-.statistics #link #link_btn {
+.statistics .link_start #link #link_btn {
   width: 100%;
   max-width: 12rem;
   height: 4rem;
@@ -172,7 +177,7 @@ main .section_hero .img_hero img {
   margin-left: 2rem;
   transition: 0.4s;
 }
-.statistics #link #link_btn:hover {
+.statistics .link_start #link #link_btn:hover {
   background-color: hsl(180deg, 70%, 52%);
   transform: scale(1.01);
 }
@@ -224,6 +229,7 @@ main .section_hero .img_hero img {
   flex-direction: column;
   justify-content: center;
   transition: 0.4s;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.02);
 }
 .statistics .adv_stats .statistics_cards .card:nth-child(2) {
   margin-top: 2rem;
@@ -251,5 +257,78 @@ main .section_hero .img_hero img {
   background-color: #3b3054;
 }
 .statistics .adv_stats .statistics_cards .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
+}
+
+#boost {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url(../images/bg-boost-desktop.svg) no-repeat hsl(257deg, 27%, 26%);
+  background-size: 100%;
+}
+#boost .boost_h2 {
+  font-size: 2.4rem;
+  color: white;
+}
+#boost .boost_btn {
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 12rem;
+  height: 3rem;
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#boost .boost_btn:hover {
+  opacity: 0.9;
+  transform: scale(1.015);
+}
+
+footer {
+  width: 100%;
+  height: 15rem;
+  padding: 6rem;
+  background-color: hsl(260deg, 8%, 14%);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+footer .footer_logo {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1086%) hue-rotate(82deg) brightness(114%) contrast(100%);
+}
+footer .footer_nav {
+  width: 100%;
+  max-width: 8rem;
+  color: hsl(257deg, 7%, 63%);
+}
+footer .footer_nav nav ul li {
+  cursor: pointer;
+  transition: 0.4s;
+}
+footer .footer_nav nav ul li:hover {
+  color: hsl(180deg, 66%, 49%);
+}
+footer .footer_nav nav ul li:nth-child(1) {
+  margin-bottom: 1rem;
+  color: white;
+}
+footer .social ul {
+  width: 100%;
+  max-width: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .social ul li {
+  cursor: pointer;
+  transition: 0.4s;
+}
+footer .social ul li:hover {
+  transform: translateY(-0.1rem);
+  filter: brightness(0) saturate(100%) invert(83%) sepia(73%) saturate(1690%) hue-rotate(119deg) brightness(91%) contrast(76%);
 }/*# sourceMappingURL=main.css.map */
