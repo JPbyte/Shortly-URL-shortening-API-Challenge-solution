@@ -59,7 +59,8 @@
             align-items: center;
             margin-top: 8rem;
                 .short_api{
-                    display: none;
+                    display: flex;
+                    opacity: 0;
                     align-items: center;
                     justify-content: space-between;
                     width: 100%;

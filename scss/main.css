@@ -188,7 +188,8 @@ main .section_hero .img_hero img {
   margin-top: 8rem;
 }
 .statistics .adv_stats .short_api {
-  display: none;
+  display: flex;
+  opacity: 0;
   align-items: center;
   justify-content: space-between;
   width: 100%;
