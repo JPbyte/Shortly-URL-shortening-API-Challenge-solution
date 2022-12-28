@@ -187,17 +187,45 @@ main .section_hero .img_hero img {
   align-items: center;
   margin-top: 8rem;
 }
-.statistics .adv_stats .link_short {
+.statistics .adv_stats .short_api {
   display: none;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  max-width: 65rem;
-  height: 3rem;
+  max-width: 78rem;
+  height: 6rem;
   background-color: #3b3054;
   border: none;
   border-radius: 1rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   color: white;
   font-size: 1.3rem;
+}
+.statistics .adv_stats .short_api .shorted {
+  width: 100%;
+  max-width: 13rem;
+  border: none;
+  color: cyan;
+  background-color: #3b3054;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.statistics .adv_stats .short_api .button_copy {
+  width: 100%;
+  max-width: 7rem;
+  height: 3rem;
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.8rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.statistics .adv_stats .short_api .button_copy:hover {
+  background-color: hsl(180deg, 70%, 52%);
+  transform: scale(1.01);
 }
 .statistics .adv_stats h2 {
   color: hsl(255deg, 11%, 22%);
