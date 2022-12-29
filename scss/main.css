@@ -77,6 +77,19 @@ header .nav_login .login_sign .sign:hover {
   transform: scale(1.01);
   opacity: 0.8;
 }
+header .open_close {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  filter: brightness(0) saturate(100%) invert(77%) sepia(88%) saturate(545%) hue-rotate(133deg) brightness(87%) contrast(85%);
+}
+header .open_close #open, header .open_close #close {
+  width: 100%;
+  height: 1.7rem;
+}
+header .open_close #close {
+  opacity: 0;
+}
 @media (max-width: 1200px) {
   header .nav_login {
     width: 75%;
@@ -85,6 +98,9 @@ header .nav_login .login_sign .sign:hover {
 @media (max-width: 1000px) {
   header .nav_login {
     display: none;
+  }
+  header .open_close {
+    opacity: 1;
   }
 }
 
@@ -127,6 +143,35 @@ main .section_hero .hero_text .hero_btn:hover {
 }
 main .section_hero .img_hero img {
   width: 100%;
+}
+@media (max-width: 1000px) {
+  main .section_hero {
+    height: 53rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.6rem;
+  }
+  main .section_hero .hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_hero .hero_text h1 {
+    width: 100%;
+    max-width: 33rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+  main .section_hero .hero_text p {
+    text-align: center;
+    max-width: 23rem;
+  }
+  main .section_hero .img_hero img {
+    width: 100%;
+    max-width: 36rem;
+  }
 }
 
 .statistics {
@@ -306,6 +351,64 @@ main .section_hero .img_hero img {
 }
 .statistics .adv_stats .statistics_cards .card:hover {
   transform: scale(1.02);
+}
+@media (max-width: 1000px) {
+  .statistics {
+    height: 95rem;
+  }
+  .statistics #link {
+    max-width: 38rem;
+    height: 12rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .statistics #link #link_put {
+    max-width: 30rem;
+  }
+  .statistics #link #link_btn {
+    max-width: 30rem;
+    margin-left: 0;
+  }
+  .statistics .adv_stats {
+    height: 81.3rem;
+  }
+  .statistics .adv_stats h2 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .statistics .adv_stats .adv_stats_p {
+    width: 100%;
+    max-width: 25rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .statistics .adv_stats .short_api {
+    height: 9rem;
+    max-width: 38rem;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .statistics .adv_stats .statistics_cards {
+    max-width: 27rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .statistics .adv_stats .statistics_cards::before {
+    width: 0.4rem;
+    height: 57rem;
+    left: 13.5rem;
+    top: 0rem;
+  }
+  .statistics .adv_stats .statistics_cards .card {
+    align-items: center;
+  }
+  .statistics .adv_stats .statistics_cards .card h3 {
+    text-align: center;
+  }
+  .statistics .adv_stats .statistics_cards .card p {
+    width: 100%;
+    max-width: 18rem;
+    text-align: center;
+  }
 }
 
 #boost {
