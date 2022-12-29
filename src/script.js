@@ -23,7 +23,7 @@ btnLink.addEventListener("click", () => {
 
     if (validate) {
         shortCamp.style.opacity = "1"
-        shortCamp.style.transition = "0.4s"
+        shortCamp.style.transition = "0.3s"
         link.style.border = "0.17rem green solid"
     } else {
         shortCamp.style.opacity = "0"

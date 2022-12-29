@@ -1,8 +1,8 @@
 header{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    padding: 4rem;
+    justify-content: space-between;
+    padding: 4rem 6rem;
         .nav_login{
             display: flex;
             justify-content: space-between;
@@ -61,4 +61,15 @@ header{
                         }
                 }
         }
+@media (max-width: 1200px) {
+    .nav_login{
+        width: 75%;
+    }
+}
+@media (max-width: 1000px) {
+    .nav_login{
+        display: none;
+            
+    }
+}
 }
