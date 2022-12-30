@@ -105,7 +105,7 @@ header{
         top: 7rem;
         height: 0rem;
         opacity: 0;
-        width: 75%;
+        width: 80%;
         background-color: $Dark-Violet;
         display: flex;
         flex-direction: column;
@@ -164,7 +164,8 @@ header{
             }
     }
     .active{
-        height: 40%;
+        height: 17%;
+        min-height: 25rem;
         opacity: 1;
         transition: height 0.2s ease-in-out;
     }
@@ -183,11 +184,6 @@ header{
             justify-content: space-evenly;
             align-items: center;
             border-radius: 15px;
-        }
-        .active{
-            height: 50%;
-            opacity: 1;
-            transition: height 0.2s ease-in-out;
         }
 }
 @media (max-width: 375px) {
