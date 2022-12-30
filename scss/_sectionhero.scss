@@ -72,4 +72,21 @@ main{
             }
     }
 }
+@media (max-width: 400px) {
+    .section_hero{
+        height: 40rem;
+        padding: 3.6rem 1.5rem;
+        .hero_text{
+            h1{
+                width: 100%;
+                max-width: 15rem;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                max-width: 23rem;
+            }
+        }
+    }
+}
 }

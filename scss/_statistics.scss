@@ -225,4 +225,58 @@
                 }
         }
 }
+@media (max-width: 375px) {
+    height: 97rem;
+    #link{
+        width: 85%;
+        #link_put{
+            max-width: 15rem;
+            font-size: 0.5rem;
+        }
+        #link_btn{
+            max-width: 15rem;
+            font-size: 1rem;
+        }
+    }
+    .adv_stats{
+        height: 85.3rem;
+        .short_api{
+            width: 90%;
+                .link_short{
+                    width: 100%;
+                    font-size: 0.8rem;
+                }
+                .shorted{
+                    font-size: 1rem;
+                }
+                .button_copy{
+                    font-size: 1rem;
+                }
+        }
+        h2{
+            font-size: 1.6rem;
+        }
+        .adv_stats_p{
+            font-size: 1rem;
+        }
+        .statistics_cards{
+            padding: 1rem;
+            &::before{
+                width: 0.4rem;
+                height: 57rem;
+                left: 11.5rem;
+                top: 0rem;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .adv_stats{
+        .statistics_cards{
+            &::before{
+                left: 9.8rem;
+            }
+        }
+    }
+}
 }

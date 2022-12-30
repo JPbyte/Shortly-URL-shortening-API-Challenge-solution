@@ -62,7 +62,7 @@ header{
                 }
             }
             .open_close{
-                display: flex;
+                display: none;
                 align-items: center;
                 opacity: 0;
                 filter: brightness(0) saturate(100%) invert(77%) sepia(88%) saturate(545%) hue-rotate(133deg) brightness(87%) contrast(85%);
@@ -82,9 +82,89 @@ header{
 @media (max-width: 1000px) {
     .nav_login{
         display: none;  
+            nav{
+                position: fixed;
+                height: 1rem;
+            }
     }
     .open_close{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         opacity: 1;
+            #open, #close{
+                width: 100%;
+                max-width: 3rem;
+            }
     }
+    .dropdown_bar{
+        position: fixed;
+        top: 8rem;
+        height: 25rem;
+        width: 100%;
+        max-width: 47rem;
+        background-color: $Dark-Violet;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 15px;
+            ul{
+                height: 13rem;
+                font-size: 1.7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                text-align: center;
+                color: white;
+                    li{
+                        transition: 0.4s;
+                        cursor: pointer;
+                        &:hover{
+                            color: $Cyan;
+                            transform: translateY(-1px);
+                        }
+                    }
+            }
+            hr{
+                width: 90%;
+                opacity: 0.2;
+            }
+            .login_drop{
+                width: 100%;
+                height: 7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.7rem;
+                        cursor: pointer;
+                            &:hover{
+                                color: $Cyan;
+                                transform: translateY(-1px);
+                            }
+                    }
+                    .sign_drop{
+                        width: 100%;
+                        max-width: 15rem;
+                        height: 3rem;
+                        font-size: 1.7rem;
+                        background-color: $Cyan;
+                        border: none;
+                        border-radius: 24px;
+                        color: white;
+                        cursor: pointer;
+                    }
+            }
+    }
+}
+@media (max-width: 400px) {
+    padding: 2rem 2rem;
+}
+@media (max-width: 375px) {
+    padding: 2rem 1rem;
 }
 }

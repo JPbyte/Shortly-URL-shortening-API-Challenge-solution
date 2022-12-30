@@ -27,4 +27,28 @@
                     transform: scale(1.015);
                 }
         }
+@media (max-width: 1000px) {
+    background: url(../images/bg-boost-mobile.svg) no-repeat hsl(257, 27%, 26%);
+    background-size: 100% 100%;
+        .boost_h2{
+            font-size: 2.2rem;
+        }
+        .boost_btn{
+            max-width: 15rem;
+        }
+}
+@media (max-width: 375px) {
+    .boost_h2{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 320px) {
+    .boost_h2{
+        font-size: 1.5rem;
+    }
+    .boost_btn{
+        max-width: 11rem;
+        font-size: 1rem;
+    }
+}
 }
