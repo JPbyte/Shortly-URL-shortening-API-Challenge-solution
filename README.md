@@ -37,8 +37,8 @@ Desktop Design
 
 ### Links
 
-- Solution URL: [Shortly URL shortening API Challenge solution]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Shortly URL shortening API Challenge solution](https://www.frontendmentor.io/solutions/url-shortening-api-landing-page-YbxWtF7D9F)
+- Live Site URL: [Add live site URL here](https://jpbyte.github.io/Shortly-URL-shortening-API-Challenge-solution/)
 
 ## My process
 
